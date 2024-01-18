@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ブラウザにブラウザを重ねました</title>
+    <style>
+        iframe {
+            width: 100%;
+            height: 700px;
+        }
+        input[type="text"] {
+            width: 500px;
+            height: 30px;
+            font-size: 16px;
+            padding: 5px;
+        }
+        button {
+            font-size: 16px;
+            padding: 5px 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>browser on browser</h1>
+    <input type="text" id="urlInput" placeholder="URLを入力してください">
+    <button id="goButton">移動</button>
+    <br><br>
+    <iframe id="browserFrame" src="https://www.google.com" frameborder="0"></iframe>
+
+    <script src="script.js"></script>
+</body>
+</html>
